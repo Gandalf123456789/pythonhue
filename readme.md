@@ -1,9 +1,15 @@
-# Usage
-## PythonHue lets you directly connect to a hue bridge in python.
+# README
+### PythonHue lets you directly connect to a hue bridge in python.
+<br>
 
-# Examples:
+## Examples:
+<br>
+
+### This code lets you just enter one of the commands ON, OFF, 1, 2, and 3 and it will execute the command.
+### You can also insert one of the colors ORANGE, WHITE, GREEN, BLUE, PINK or RED.
 
 
+```
   if __name__ == "__main__":
     lamp = '1'
     hue = Hue('asd-asd', '123.456.789', lamp)
@@ -13,7 +19,6 @@
                 hue.set_lamp(True)
             if command == "OFF" or "off":
                 hue.set_lamp(False)
-            # set lamps (wenn nicht funktioniert zeile 30 variable lamp durch eine lampennummer ersetzen)
             if command == "1":
                 lamp = '1'
             if command == '2':
@@ -30,5 +35,7 @@
         else:
             print("succesfully excecuted the command!")
     print("program closed")
+```
+
     
     
